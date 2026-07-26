@@ -1,0 +1,24 @@
+generated: '2026-07-18'
+method: searched
+source: live probes of /.well-known/* on donotpay.com and api.donotpay.com
+notes: >-
+  No /.well-known/ discovery documents are published. api.donotpay.com is an
+  internal backend that returns a plain "Hello from DoNotPay" string with no
+  OpenAPI, discovery, or docs surface. Recorded for idempotency; no WellKnown
+  or SecurityTxt pointer emitted because nothing was found.
+hosts:
+- host: https://donotpay.com
+  documents:
+  - {path: /.well-known/security.txt, status: 404}
+  - {path: /.well-known/openid-configuration, status: 404}
+  - {path: /.well-known/oauth-authorization-server, status: 404}
+  - {path: /.well-known/api-catalog, status: 404}
+  - {path: /.well-known/ai-plugin.json, status: 404}
+  - {path: /llms.txt, status: 404}
+- host: https://api.donotpay.com
+  documents:
+  - {path: /.well-known/security.txt, status: 404}
+  - {path: /.well-known/openid-configuration, status: 404}
+  - {path: /openapi.json, status: 404}
+  - {path: /swagger.json, status: 404}
+  - {path: /docs, status: 404}

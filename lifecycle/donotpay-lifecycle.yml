@@ -1,0 +1,12 @@
+generated: '2026-07-18'
+method: searched
+source: https://status.donotpay.com/
+notes: >-
+  DoNotPay is a direct consumer application with no public developer API, so
+  there is no published API versioning scheme, deprecation policy, or SLA. The
+  only operational-transparency surface found is a status subdomain.
+versioning: null
+deprecation: null
+sla: null
+status_page: https://status.donotpay.com/
+deprecated_operations: []

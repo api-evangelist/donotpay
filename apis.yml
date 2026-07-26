@@ -1,7 +1,15 @@
 aid: donotpay
 name: DoNotPay
-description: DoNotPay is a company surfaced as a portfolio company of a16z, felicis and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  DoNotPay is an AI-powered consumer advocacy platform, founded in 2015 by
+  Joshua Browder and marketed as the "robot lawyer." It offers a web-based
+  consumer product with 100+ AI-assisted tools that help people cancel
+  subscriptions and free trials, dispute parking tickets and traffic
+  violations, file chargebacks and refunds, negotiate and lower bills, find
+  unclaimed money, fight robocalls, generate virtual cards for safe trial
+  signups, and automate customer-service interactions. DoNotPay is a direct
+  consumer application and does not publish a public developer API, SDK, or
+  developer portal; it is tracked here as an API Evangelist company profile.
 url: https://raw.githubusercontent.com/api-evangelist/donotpay/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,11 +18,29 @@ x-backed-by:
 - felicis
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
+image: https://donotpay-assets.s3-us-west-2.amazonaws.com/dnp-logo.png
 tags:
 - Company
+- Consumer
+- Legal Tech
+- Consumer Advocacy
+- Artificial Intelligence
+- Automation
+- Consumer Protection
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -24,3 +50,24 @@ maintainers:
 common:
 - type: Website
   url: https://donotpay.com
+- type: SignUp
+  url: https://donotpay.com/login
+- type: TermsOfService
+  url: https://donotpay.com/learn/terms-of-service/
+- type: PrivacyPolicy
+  url: https://donotpay.com/learn/privacy-policy/
+- type: Blog
+  url: https://donotpay.com/learn/
+- type: Support
+  url: https://donotpay.com/contact/
+- type: StatusPage
+  url: https://status.donotpay.com/
+- type: DomainSecurity
+  url: security/donotpay-domain-security.yml
+- type: Lifecycle
+  url: lifecycle/donotpay-lifecycle.yml
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
